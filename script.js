@@ -35,7 +35,7 @@ let eur;
       			console.log("eur " + eur);
     		}
     	}
-    	ajax.open("GET", "http://api.nbp.pl/api/exchangerates/rates/a/eur/", true);
+    	ajax.open("GET", "https://api.nbp.pl/api/exchangerates/rates/a/eur/", true);
   		
   		ajax.send();
 	}
