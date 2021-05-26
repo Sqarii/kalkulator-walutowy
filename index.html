@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator Walutowy</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+<body onload="ChangeValue()">
+	<script type="text/javascript" src="script.js"></script>
+
+	<center>
+	<div class="main">
+
+		<br><br><h2 style="text-align: center; text-transform: uppercase; color: #4CAF50;">Kalkulator Walutowy</h2><br><br>
+		<div>	
+			<div id="d1">
+
+		  	<select class="select" onchange="ChangeValue()" id="s1">
+			    <option value="PLN">PLN</option>
+			    <option value="EUR">EUR</option>
+			    <option value="USD">USD</option>
+			    <option value="GBP">GBP</option>
+			    <option value="AUD">AUD</option>
+			    <option value="CAD">CAD</option>
+			    <option value="CHF">CHF</option>
+			    <option value="CNY">CNY</option>
+			    <option value="SEK">SEK</option>
+			    <option value="JPY">JPY</option>
+	  		</select>
+
+	  		<input class="input" id="i1" onkeypress="ClearI2()" type="number" >
+
+	  	</div>
+
+		<br>
+
+	  	<div id="d2">
+	  		<select class="select" onchange="ChangeValue()" id="s2">
+			    <option value="EUR">EUR</option>
+			    <option value="USD">USD</option>
+			    <option value="GBP">GBP</option>
+			    <option value="AUD">AUD</option>
+			    <option value="CAD">CAD</option>
+			    <option value="CHF">CHF</option>
+			    <option value="CNY">CNY</option>
+			    <option value="SEK">SEK</option>
+			    <option value="JPY">JPY</option>
+			    <option value="PLN">PLN</option>
+	  		</select>
+
+	  		<input class="input" id="i2" onkeypress="ClearI1()" type="number" >
+
+		</div>
+
+		<br>
+
+		<button onclick="Wynik()">Przelicz</button>
+		</div>
+		
+
+	</div>
+	</center>
+	
+</body>
+</html>
